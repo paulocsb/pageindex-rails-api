@@ -29,26 +29,21 @@ Configuration
 
 ### Clone repository
 ```
-$ git clone <path-this-repo>.git
+$ git clone git@github.com:paulocsb/lim-api.git
 $ cd lim-api
 ```
 
-### Run bundle install
+### Run
 ```
-$ bundle install
+$ bundle install && cd client && npm i && cd ..
 ```
 
 Database
 --------
 
-### Run database setup
+### Run initialize database
 ```
-$ rake db:setup
-```
-
-### Run migrations
-```
-$ rake db:migratiom
+$ rake db:create && rake db:migrate
 ```
 
 Start the Web Server
@@ -56,8 +51,12 @@ Start the Web Server
 
 ### Run server setup
 ```
-$ rails server
+$ rake start
 ```
+
+### Access web browser:
+
+http://localhost:3000
 
 Author
 ------
