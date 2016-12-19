@@ -6,6 +6,9 @@ gem 'puma', '~> 3.0'
 gem 'nokogiri'
 gem 'httparty'
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'foreman'
+gem 'rack-cors'
+gem 'rack-attack'
 
 group :development, :test do
   gem 'byebug', platform: :mri

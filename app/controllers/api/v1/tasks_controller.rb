@@ -1,6 +1,6 @@
 class Api::V1::TasksController < Api::V1::BaseController
   def index
-  	pages = Page.all
+  	pages = Page.all.order(created_at: :desc)
     render json: pages, each_serializer: Api::V1::PageSerializer, root: false
   end
 
