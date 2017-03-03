@@ -29,8 +29,8 @@ Configuration
 
 ### Clone repository
 ```
-$ git clone git@github.com:paulocsb/lim-api.git
-$ cd lim-api
+$ git clone git@github.com:paulocsb/pageindex-rails-api.git
+$ cd pageindex-rails-api
 ```
 
 ### Run
